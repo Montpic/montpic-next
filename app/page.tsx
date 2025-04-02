@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <Image
         src="/mountain.webp"
-        className="fixed w-screen -z-50 align-middle -bottom-1/12 sm:-bottom-1/5 md:-bottom-1/4 lg:-bottom-1/3 xl:-bottom-2/5 blur-sm brightness-75 dark:brightness-100"
+        className="fixed w-screen -z-50 align-middle -bottom-20 md:-bottom-1/4 lg:-bottom-1/3 xl:-bottom-1/2 blur-sm brightness-75 dark:brightness-100"
         alt={"Image of a mountain blurred in the background"}
         width={1301} height={980} />
     </>
