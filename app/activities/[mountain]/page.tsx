@@ -1,15 +1,6 @@
 import activities from "@/lib/activities.json";
 import Image from "next/image";
-
-type Activities = {
-  [key: string]: {
-    name: string;
-    location: string;
-    activity: string;
-    image: string;
-    members: { pseudo: string; age: number }[];
-  };
-};
+import { Activities } from "@/types/Activity";
 
 const typedActivities: Activities = activities;
 import { notFound } from "next/navigation";
