@@ -37,6 +37,10 @@ export default async function Page({
         className="rounded-lg"
       />
       <p>{activity.activity}</p>
+
+      {activity.members.map((member) => (
+        <p key={member.pseudo}>{member.pseudo}</p>
+      ))}
     </div>
   );
 }
