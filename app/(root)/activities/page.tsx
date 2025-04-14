@@ -1,6 +1,5 @@
 import ActivityButton from "@/components/activityButton";
 import activities from "@/lib/activities.json";
-import { Activities } from "@/types/Activity";
 
 export default async function Page() {
   return (
