@@ -1,0 +1,26 @@
+{
+    "roule" : {
+        "name" : "Montagne du roule",
+        "location" : "Cherbourg-en-Cotentin",
+        "activity" : "Visite du musée sur la seconde guerre mondiale",
+        "image" : "/roule.webp",
+        "members" : [
+            {
+                "pseudo" : "julien121",
+                "age" : 30
+            },
+            {
+                "pseudo" : "mariemadelaine",
+                "age" : 28
+            },
+            {
+                "pseudo" : "polo",
+                "age" : 32
+            },
+            {
+                "pseudo": "ethan_talinge",
+                "age": 20
+            }
+        ]
+    }
+}
