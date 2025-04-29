@@ -23,12 +23,15 @@ export default function Header() {
       <Drawer open={isOpen} onClose={handleClose} position="right">
         <DrawerHeader title="Montpic" />
         <DrawerItems>
-          <Link href="/card" className="flex items-center gap-2">
+          <Link href="/map" className="flex items-center gap-2">
             Carte
           </Link>
           <Link href="/activities" className="flex items-center gap-2">
             Activités
           </Link>
+          <p className="flex items-center gap-2 hover:cursor-pointer">
+            Mon compte
+          </p>
         </DrawerItems>
       </Drawer>
     </header>
