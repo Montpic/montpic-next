@@ -15,7 +15,7 @@ export default function Header() {
         <Link href="/" className="text-3xl font-bold">
           Montpic
         </Link>
-        <Button color="light" onClick={() => setIsOpen(true)}>
+        <Button outline color="dark" onClick={() => setIsOpen(true)}>
           <TbMenu2 className="text-2xl" />
         </Button>
       </div>
