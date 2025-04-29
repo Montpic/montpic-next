@@ -6,10 +6,14 @@ import { Button, Popover } from "flowbite-react";
 
 const typedActivities: Activities = activities;
 
+interface PageParams {
+  mountain: string;
+}
+
 export default function Page({
   params,
 }: {
-  params: { mountain: string };
+  params: PageParams;
 }) {
   const { mountain } = params;
 
