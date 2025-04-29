@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${spaceMono.variable} antialiased select-none`}>
+      <body className={`${spaceMono.variable} min-h-screen antialiased select-none`}>
         {children}
       </body>
     </html>
