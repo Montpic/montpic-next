@@ -11,7 +11,7 @@ export default async function Page({
 }: {
   params: { mountain: string };
 }) {
-  const { mountain } = await params;
+  const { mountain } = params;
   if (!(mountain in typedActivities)) {
     notFound();
   }
