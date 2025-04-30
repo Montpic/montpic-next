@@ -1,23 +1,18 @@
+'use client';
+
 import activities from "@/lib/activities.json";
 import Image from "next/image";
 import { Activities } from "@/types/Activity";
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import { Button, Popover } from "flowbite-react";
 
 const typedActivities: Activities = activities;
 
-interface PageParams {
-  mountain: string;
-}
+export default function Page() {
+  const params = useParams();
+  const mountain = Array.isArray(params.mountain) ? params.mountain[0] : params.mountain;
 
-export default function Page({
-  params,
-}: {
-  params: PageParams;
-}) {
-  const { mountain } = params;
-
-  if (!(mountain in typedActivities)) {
+  if (!mountain || !(mountain in typedActivities)) {
     notFound();
   }
 
