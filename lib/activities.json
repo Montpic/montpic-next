@@ -27,7 +27,7 @@
         "name" : "Village de Montcontour",
         "location" : "Montcontour",
         "activity" : "Balade dans le village médiéval de Montcontour, meilleur village de France",
-        "image" : "/montcontour.webp",
+        "image" : "/montcontour.jpg",
         "members" : [
             {
                 "pseudo" : "harryp",
@@ -47,7 +47,7 @@
         "name" : "Mont Saint-Michel",
         "location" : "Mont Saint-Michel",
         "activity" : "Visite de l`'abbaye du Mont Saint-Michel",
-        "image" : "/mont.webp",
+        "image" : "/saintmichel.jpg",
         "members" : [
             {
                 "pseudo" : "julien121",
@@ -71,7 +71,7 @@
         "name" : "Roc'h Ruz",
         "location" : "Plounéour-Ménez",
         "activity" : "Randonnée au Roc'h Ruz et vélo-rail",
-        "image" : "/ruz.webp",
+        "image" : "/ruz.jpg",
         "members" : [
             {
                 "pseudo" : "julien121",
