@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // This helps with file-based static exports
-  experimental: {
-    appDir: true,
+  images: {
+    unoptimized: true, // Nécessaire pour l'export statique
   },
-  // Generate all routes statically
-  trailingSlash: true,
+  trailingSlash: true, // Aide à la navigation sur GitHub Pages
 };
 
 module.exports = nextConfig;

@@ -9,7 +9,7 @@ import { Button, Popover } from "flowbite-react";
 const typedActivities: Activities = activities;
 
 export default function Page() {
-  const params = useParams();
+  const params = { mountain: decodeURIComponent(window.location.pathname.split("/").pop() || "") };
   const mountain = params.mountain as string;
 
   if (!mountain || !(mountain in typedActivities)) {
