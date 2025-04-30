@@ -1,24 +1,18 @@
+'use client';
+
 import activities from "@/lib/activities.json";
 import Image from "next/image";
 import { Activities } from "@/types/Activity";
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import { Button, Popover } from "flowbite-react";
-
-import './page-static';
 
 const typedActivities: Activities = activities;
 
-// This function must be in the same file as the page component for static exports
-export async function generateStaticParams() {
-  return Object.keys(typedActivities).map(mountain => ({
-    mountain: mountain
-  }));
-}
+export default function Page() {
+  const params = useParams();
+  const mountain = params.mountain as string;
 
-export default function Page({ params }: { params: { mountain: string } }) {
-  const { mountain } = params;
-
-  if (!(mountain in typedActivities)) {
+  if (!mountain || !(mountain in typedActivities)) {
     notFound();
   }
 
