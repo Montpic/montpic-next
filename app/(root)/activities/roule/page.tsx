@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import activities from "@/lib/activities.json";
 import Image from "next/image";
@@ -8,8 +8,7 @@ import { Button, Popover } from "flowbite-react";
 const typedActivities: Activities = activities;
 
 export default function Page() {
-
-  const activity = typedActivities['roule'];
+  const activity = typedActivities["roule"];
   return (
     <div className="flex flex-col items-center justify-center text-center">
       <div className="flex md:flex-row flex-col grow items-center justify-center text-center p-2 pt-10 gap-4">
@@ -45,7 +44,42 @@ export default function Page() {
           ))}
         </div>
       </div>
-      <Button color="light">S&apos;inscrire</Button>
+      <Button size="xl" color="light" className="my-12">
+        S&apos;inscrire
+      </Button>
+      <div className="mt-12 w-full max-w-2xl border rounded-xl p-4">
+        <p>Chat d'activité</p>
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-2">
+            <div className="flex flex-col items-center">
+              <span className="text-xs font-medium text-gray-500">Alice</span>
+              <div className="bg-blue-100 rounded-lg p-3">
+                <p className="text-sm text-black">
+                  Salut tout le monde ! Qui vient demain ?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="flex flex-col items-center">
+              <span className="text-xs font-medium text-gray-500">Bob</span>
+              <div className="bg-blue-100 rounded-lg p-3">
+                <p className="text-sm text-black">
+                  Moi ! Je viens de minscrire
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-4 flex items-center gap-2">
+          <input
+            type="text"
+            placeholder="Écrivez un message..."
+            className="flex-1 rounded-lg border border-gray-300 text-black p-2"
+          />
+          <Button color="light">Envoyer</Button>
+        </div>
+      </div>
     </div>
   );
 }
