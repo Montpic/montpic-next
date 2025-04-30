@@ -52,7 +52,7 @@ export default function Page() {
           ))}
         </div>
       </div>
-      <Button color="light">S'inscrire</Button>
+      <Button color="light">S&apos;inscrire</Button>
     </div>
   );
 }
