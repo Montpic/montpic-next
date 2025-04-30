@@ -6,6 +6,8 @@ import { Activities } from "@/types/Activity";
 import { notFound, useParams } from "next/navigation";
 import { Button, Popover } from "flowbite-react";
 
+import './page-static';
+
 const typedActivities: Activities = activities;
 
 export default function Page() {
