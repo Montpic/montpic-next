@@ -11,7 +11,7 @@ export default function ActivityButton({
 }) {
   return (
     <Link
-      href={`/activities/${activityId}`}
+      href={`/activities/roule`}
       className="flex items-center justify-center text-center p-2 gap-4 border rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out hover:bg-gray-300 dark:hover:bg-gray-800"
     >
       <Image
