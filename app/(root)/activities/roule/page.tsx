@@ -3,20 +3,13 @@
 import activities from "@/lib/activities.json";
 import Image from "next/image";
 import { Activities } from "@/types/Activity";
-import { notFound, useParams } from "next/navigation";
 import { Button, Popover } from "flowbite-react";
 
 const typedActivities: Activities = activities;
 
 export default function Page() {
-  const params = { mountain: decodeURIComponent(window.location.pathname.split("/").pop() || "") };
-  const mountain = params.mountain as string;
 
-  if (!mountain || !(mountain in typedActivities)) {
-    notFound();
-  }
-
-  const activity = typedActivities[mountain];
+  const activity = typedActivities['roule'];
   return (
     <div className="flex flex-col items-center justify-center text-center">
       <div className="flex md:flex-row flex-col grow items-center justify-center text-center p-2 pt-10 gap-4">
